@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import './style.scss'
+import './style.less'
 type propsIconTitle = {
   title: string
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import IconTitle from '../../components/IconTitle'
-import './style.scss'
+import './style.less'
 const Contact = () => {
   return (
     <div className="container-contact">

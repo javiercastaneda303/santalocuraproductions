@@ -3,7 +3,7 @@
 import React, { ReactNode } from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import './style.scss' // Asegúrate de tener este archivo para los estilos
+import './style.less' // Asegúrate de tener este archivo para los estilos
 
 interface LayoutProps {
   children: ReactNode

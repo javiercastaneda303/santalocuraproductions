@@ -1,11 +1,9 @@
-import React from 'react';
-import './style.scss';
-import AppRouter from './pages/router';
+import React from 'react'
+import './style.less'
+import AppRouter from './pages/router'
 
 function App() {
-  return (
-    <AppRouter/>
-  );
+  return <AppRouter />
 }
 
-export default App;
+export default App

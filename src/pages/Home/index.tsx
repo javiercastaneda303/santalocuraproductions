@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.scss'
+import './styles.less'
 import IconTitle from '../../components/IconTitle'
 const index = () => {
   return (

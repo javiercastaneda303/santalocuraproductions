@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.scss'
+import './style.less'
 import IconTitle from '../../components/IconTitle'
 const Talks = () => {
   return (
