@@ -1,0 +1,18 @@
+.IconTitleContainer {
+  display: flex;
+  align-items: center;
+
+  .imageContainer {
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    img {
+      max-height: 6em;
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+.navbar {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: $primary;
+  color: $secondary;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    .logo {
+      font-size: 1.5rem;
+      width: 20%;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      margin-left: auto;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: $secondary;
+        &::after {
+          content: '';
+          display: block;
+          height: 2px;
+          width: 0;
+          background-color: $third;
+          position: absolute;
+          bottom: -2px;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after,
+        &.active::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

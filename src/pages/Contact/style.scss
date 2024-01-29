@@ -1,0 +1,30 @@
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-image-text {
+    display: flex;
+    .container-text {
+      width: 60%;
+    }
+    .container-image {
+      padding: 0 20px 0 20px;
+      width: 38%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .container-map {
+    border: solid 2px black;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 200px;
+  }
+}
