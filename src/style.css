@@ -12,9 +12,9 @@ html {
 }
 
 h1 {
-  @apply text-secondary text-2xl; /* Utiliza las clases de Tailwind para tamaño de fuente y color */
+  @apply text-secondary text-2xl font-bold; /* Utiliza las clases de Tailwind para tamaño de fuente y color */
 }
 
 p {
-  @apply text-secondary text-lg font-semibold; /* Utiliza las clases de Tailwind para tamaño de fuente, peso y color */
+  @apply text-secondary pb-5 text-lg font-semibold; /* Utiliza las clases de Tailwind para tamaño de fuente, peso y color */
 }

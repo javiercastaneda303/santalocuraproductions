@@ -7,7 +7,7 @@ type PropsIconTitle = {
 const IconTitle: FC<PropsIconTitle> = ({ title }) => {
   return (
     <div className="IconTitleContainer flex items-center">
-      <div className="imageContainer mr-4 flex items-center">
+      <div className="imageContainer mr-4 flex items-center w-60 h-40">
         <img src={'/images/teatro.png'} className="max-h-6em max-w-full" alt="Teatro" />
       </div>
 

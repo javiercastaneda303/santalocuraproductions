@@ -5,6 +5,14 @@ module.exports = {
         primary: '#489ac2',
         secondary: '#242834',
         third: '#c4b0a9'
+      },
+      width: {
+        30: '30px',
+        60: '60px'
+      },
+      height: {
+        30: '30px',
+        40: '40px'
       }
     }
   },

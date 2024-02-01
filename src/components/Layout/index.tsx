@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="layout min-h-screen flex flex-col">
       <Navbar />
-      <div className="content flex-1 p-20 relative bg-gray-200">
+      <div className="content flex-1 p-5 relative bg-gray-200">
         <div className="background fixed top-0 left-0 h-full z-[-10000]">
           {/* <img src="/images/fondo.jpg" alt="Fondo" className="object-contain w-full" /> */}
         </div>
