@@ -1,13 +1,15 @@
+// src/pages/WorkShops.jsx
+
 import React from 'react'
-import './styles.less'
 import IconTitle from '../../components/IconTitle'
+
 const WorkShops = () => {
   return (
-    <div className="workshops-container">
+    <div className="workshops-container flex flex-col">
       <div className="artistic section">
         <IconTitle title="Formación artística – Grupal. " />
-        <div className="container-image-text">
-          <div className="container-text">
+        <div className="container-image-text flex">
+          <div className="container-text w-3/5">
             <p>
               Es un Taller para Formación y Preparación continua para actores y actrices. Es un
               taller estable y de actividad constante. Interesante oferta para reciclarse en
@@ -18,7 +20,7 @@ const WorkShops = () => {
               personaje y la capacidad interpretativas para su puesta en escena. Analizaremos
               la voz como herramienta creativa. La expresión corporal. Movimiento Escénico.
             </p>
-            <h3> Objetivo:</h3>
+            <h3 className="font-bold"> Objetivo:</h3>
             <p>
               Subir a escena con seguridad. Acostumbrarnos a la auto observación y
               concentración. Conocer el mundo escondido detrás de un texto teatral. Actuar.
@@ -28,8 +30,12 @@ const WorkShops = () => {
             </p>
           </div>
 
-          <div className="container-image">
-            <img src="/images/artistic.png" />
+          <div className="container-image px-8 w-2/5">
+            <img
+              src="/images/artistic.png"
+              className="w-full object-contain"
+              alt="Artístico"
+            />
           </div>
         </div>
       </div>
@@ -45,29 +51,31 @@ const WorkShops = () => {
       </div>
       <div className="women section">
         <IconTitle title="Teatro-para Mujeres" />
-        <h2>Recobrar la Autoestima. Potenciar tu capacidad y Creatividad</h2>
-        <h3>Objetivos Prácticos:</h3>
+        <h2 className="text-2xl font-bold">
+          Recobrar la Autoestima. Potenciar tu capacidad y Creatividad
+        </h2>
+        <h3 className="font-bold">Objetivos Prácticos:</h3>
         <p>
           Conseguiremos interactuar con nuestro propio Centro de Energía. Activando el Ojo
           Espiritual, quien permite el desarrollo emocional integral y pleno. Mejoraremos o
           modificaremos aspectos incómodos de nuestra propia personalidad desde el
           autoconocimiento. Activaremos el proceso creativo individual y grupal. Al final de
           los talleres se realizará representaciones teatrales con público empleando las
-          técnicas teatrales aprendidos en el taller.
+          técnicas teatrales aprendidas en el taller.
         </p>
       </div>
       <div className="ludic section">
         <IconTitle title="Lúdico. Amor al Arte:" />
-        <div className="container-image-text">
-          <div className="container-image">
-            <img src="/images/ludic.png" />
+        <div className="container-image-text flex">
+          <div className="container-image w-2/5">
+            <img src="/images/ludic.png" className="w-full object-contain" alt="Lúdico" />
           </div>
-          <div className="container-text">
+          <div className="container-text w-3/5">
             <p>
               Disfrutar. Crear y representar comedias, Gags de improvisación. Farsa. Parodias
               con temas sociales. Décimas y Repentismo. Poemas. Musicales. Danza-Teatro.
             </p>
-            <h3>Objetivo:</h3>
+            <h3 className="font-bold">Objetivo:</h3>
             <p>
               Relajar la mente. Buscamos ser felices. Ser auténticos niños/as para sacar lo
               mejor y más divertido de nosotros mismos/as. Recurriremos a imágenes emotivas,
@@ -81,22 +89,22 @@ const WorkShops = () => {
       </div>
       <div className="childish section">
         <IconTitle title="Teatro Infantil." />
-        <div className="container-image-text">
-          <div className="container-text">
+        <div className="container-image-text flex">
+          <div className="container-text w-3/5">
             <p>
               Estimula la creatividad, el manejo consciente de las cualidades innatas del
               infante. Juegos grupales. Crear un personaje. Improvisaciones y creación
               colectiva.
             </p>
-            <h3>Objetivo:</h3>
+            <h3 className="font-bold">Objetivo:</h3>
             <p>
               Disfrutar una actividad extra escolar integrando como propósito importante, el
               desarrollo de sus capacidades artísticas y emocionales. Construir montajes
               teatrales donde ellos se identifiquen con su personalidad y su entorno.
             </p>
           </div>
-          <div className="container-image">
-            <img src="/images/childish.png" />
+          <div className="container-image px-8 w-2/5">
+            <img src="/images/childish.png" className="w-full object-contain" alt="Infantil" />
           </div>
         </div>
         <IconTitle title="¡Apúntate!! ¡Te acompañaré a representar el papel de tu vida!" />

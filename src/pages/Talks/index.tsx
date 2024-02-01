@@ -1,11 +1,13 @@
+// src/pages/Talks.jsx
+
 import React from 'react'
-import './style.less'
 import IconTitle from '../../components/IconTitle'
+
 const Talks = () => {
   return (
-    <div className="talks-container">
+    <div className="talks-container flex flex-col">
       <IconTitle title="Charlas y Conferencias" />
-      <h2>
+      <h2 className="text-2xl font-bold">
         Temas de Integración Social Infancia y Juventud. Bullying. Racismo. Discriminación
         Social.
       </h2>
@@ -16,7 +18,7 @@ const Talks = () => {
         utilizamos juegos de Teatro y métodos basados en Psicología Infantil y referencias
         socioculturales de actualidad como base de la dinámica.
       </p>
-      <h2>Objetivo:</h2>
+      <h2 className="text-2xl font-bold">Objetivo:</h2>
       <p>
         Que desde la infancia y los jóvenes, podamos aportar desde la experiencia migrante,
         para educar de manera integral a futuras generaciones. Contribuir a formar a una
