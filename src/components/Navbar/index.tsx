@@ -1,51 +1,67 @@
 // Navbar.tsx
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const Navbar: React.FC = () => {
   const location = useLocation()
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen)
+  }
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [location.pathname])
 
   return (
-    <div className="navbar flex justify-center bg-primary text-secondary sticky top-0">
-      <div className="container flex justify-between items-center py-4">
-        <div className="logo text-2xl font-bold">Santa Locura</div>
-        <div className="menu-icon text-3xl cursor-pointer md:hidden">
-          {/* Agrega un ícono de menú para dispositivos móviles */}☰
+    <div className="navbar bg-primary text-secondary">
+      <div className="container py-4">
+        <div className="flex items-center justify-between">
+          <div className="logo text-2xl font-bold">Santa Locura</div>
+          <div className="menu-icon text-3xl cursor-pointer md:hidden" onClick={toggleDrawer}>
+            ☰
+          </div>
         </div>
-        <div className="menu hidden md:flex items-center space-x-8">
-          <Link
-            to="/"
-            className={`text-lg font-bold ${
-              location.pathname === '/' ? 'text-third' : 'text-secondary'
-            }`}
-          >
-            Inicio
-          </Link>
-          <Link
-            to="/talleres"
-            className={`text-lg font-bold ${
-              location.pathname === '/talleres' ? 'text-third' : 'text-secondary'
-            }`}
-          >
-            Talleres
-          </Link>
-          <Link
-            to="/charlas"
-            className={`text-lg font-bold ${
-              location.pathname === '/charlas' ? 'text-third' : 'text-secondary'
-            }`}
-          >
-            Charlas
-          </Link>
-          <Link
-            to="/contacto"
-            className={`text-lg font-bold ${
-              location.pathname === '/contacto' ? 'text-third' : 'text-secondary'
-            }`}
-          >
-            Contáctanos
-          </Link>
-        </div>
+
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="bg-white p-4">
+              <Link
+                to="/"
+                className={`block text-lg font-bold mb-2 ${
+                  location.pathname === '/' ? 'text-third' : 'text-secondary'
+                }`}
+              >
+                Inicio
+              </Link>
+              <Link
+                to="/talleres"
+                className={`block text-lg font-bold mb-2 ${
+                  location.pathname === '/talleres' ? 'text-third' : 'text-secondary'
+                }`}
+              >
+                Talleres
+              </Link>
+              <Link
+                to="/charlas"
+                className={`block text-lg font-bold mb-2 ${
+                  location.pathname === '/charlas' ? 'text-third' : 'text-secondary'
+                }`}
+              >
+                Charlas
+              </Link>
+              <Link
+                to="/contacto"
+                className={`block text-lg font-bold mb-2 ${
+                  location.pathname === '/contacto' ? 'text-third' : 'text-secondary'
+                }`}
+              >
+                Contáctanos
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
