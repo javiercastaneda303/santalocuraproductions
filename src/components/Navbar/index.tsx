@@ -1,4 +1,3 @@
-// Navbar.tsx
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Drawer from '@mui/material/Drawer'
@@ -34,16 +33,15 @@ const Navbar: React.FC = () => {
   ]
 
   return (
-    <div className="navbar flex justify-center bg-primary text-secondary sticky top-0">
-      <div className="container flex justify-between items-center py-4">
+    <div className="navbar flex justify-center bg-primary text-secondary fixed top-0 z-50 w-full">
+      <div className="container flex justify-between items-center py-4 px-4 md:px-8">
         <div className="logo text-2xl font-bold">Santa Locura</div>
-        <div className=" md:hidden">
+        <div className="md:hidden">
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={toggleDrawer(true)}
-            className="menu-icon md:hidden"
           >
             <MenuIcon />
           </IconButton>
@@ -68,7 +66,7 @@ const Navbar: React.FC = () => {
           </Box>
         </Drawer>
 
-        <div className="menu-items hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {menuItems.map(({ name, path }) => (
             <Link
               key={name}
