@@ -1,67 +1,86 @@
 // Navbar.tsx
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Drawer from '@mui/material/Drawer'
+import IconButton from '@mui/material/IconButton'
+import MenuIcon from '@mui/icons-material/Menu'
+import Box from '@mui/material/Box'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
 
 const Navbar: React.FC = () => {
   const location = useLocation()
-  const [isOpen, setIsOpen] = useState(false)
+  const [isDrawerOpen, setDrawerOpen] = useState(false)
 
-  const toggleDrawer = () => {
-    setIsOpen(!isOpen)
+  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+    if (
+      event.type === 'keydown' &&
+      ((event as React.KeyboardEvent).key === 'Tab' ||
+        (event as React.KeyboardEvent).key === 'Shift')
+    ) {
+      return
+    }
+
+    setDrawerOpen(open)
   }
 
-  useEffect(() => {
-    setIsOpen(false)
-  }, [location.pathname])
+  const menuItems = [
+    { name: 'Inicio', path: '/' },
+    { name: 'Talleres', path: '/talleres' },
+    { name: 'Charlas', path: '/charlas' },
+    { name: 'Contáctanos', path: '/contacto' }
+  ]
 
   return (
-    <div className="navbar bg-primary text-secondary">
-      <div className="container py-4">
-        <div className="flex items-center justify-between">
-          <div className="logo text-2xl font-bold">Santa Locura</div>
-          <div className="menu-icon text-3xl cursor-pointer md:hidden" onClick={toggleDrawer}>
-            ☰
-          </div>
+    <div className="navbar flex justify-center bg-primary text-secondary sticky top-0">
+      <div className="container flex justify-between items-center py-4">
+        <div className="logo text-2xl font-bold">Santa Locura</div>
+        <div className=" md:hidden">
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={toggleDrawer(true)}
+            className="menu-icon md:hidden"
+          >
+            <MenuIcon />
+          </IconButton>
         </div>
 
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="bg-white p-4">
-              <Link
-                to="/"
-                className={`block text-lg font-bold mb-2 ${
-                  location.pathname === '/' ? 'text-third' : 'text-secondary'
-                }`}
-              >
-                Inicio
-              </Link>
-              <Link
-                to="/talleres"
-                className={`block text-lg font-bold mb-2 ${
-                  location.pathname === '/talleres' ? 'text-third' : 'text-secondary'
-                }`}
-              >
-                Talleres
-              </Link>
-              <Link
-                to="/charlas"
-                className={`block text-lg font-bold mb-2 ${
-                  location.pathname === '/charlas' ? 'text-third' : 'text-secondary'
-                }`}
-              >
-                Charlas
-              </Link>
-              <Link
-                to="/contacto"
-                className={`block text-lg font-bold mb-2 ${
-                  location.pathname === '/contacto' ? 'text-third' : 'text-secondary'
-                }`}
-              >
-                Contáctanos
-              </Link>
-            </div>
-          </div>
-        )}
+        <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer(false)}>
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
+          >
+            <List>
+              {menuItems.map(({ name, path }) => (
+                <ListItem key={name} disablePadding>
+                  <ListItemButton component={Link} to={path}>
+                    <ListItemText primary={name} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        </Drawer>
+
+        <div className="menu-items hidden md:flex items-center space-x-8">
+          {menuItems.map(({ name, path }) => (
+            <Link
+              key={name}
+              to={path}
+              className={`text-lg font-bold ${
+                location.pathname === path ? 'text-third' : 'text-secondary'
+              }`}
+            >
+              {name}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
