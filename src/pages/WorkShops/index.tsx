@@ -10,7 +10,7 @@ const WorkShops = () => {
         <IconTitle title="Formación artística – Grupal. " />
         <div className="container-image-text flex">
           <div className="container-text w-3/5">
-            <p>
+            <p className="text-justify">
               Es un Taller para Formación y Preparación continua para actores y actrices. Es un
               taller estable y de actividad constante. Interesante oferta para reciclarse en
               los conocimientos escénicos, desarrollar habilidades profesionales, subir a
@@ -21,7 +21,7 @@ const WorkShops = () => {
               la voz como herramienta creativa. La expresión corporal. Movimiento Escénico.
             </p>
             <h3 className="font-bold"> Objetivo:</h3>
-            <p>
+            <p className="text-justify">
               Subir a escena con seguridad. Acostumbrarnos a la auto observación y
               concentración. Conocer el mundo escondido detrás de un texto teatral. Actuar.
               Ejercitar el cuerpo y la mente. Interpretación de una Escritura y lectura
@@ -41,7 +41,7 @@ const WorkShops = () => {
       </div>
       <div className="terapla section">
         <IconTitle title="Teatro-Terapia" />
-        <p>
+        <p className="text-justify">
           Salud emocional, Activación de la memoria. Utilizamos el teatro como herramienta para
           unir situaciones paralelas desde nuestra propia experiencia de vida. Ejercicios para
           indagar y localizar con creencias adquiridas del pasado, o bloqueos que han afectado
@@ -55,7 +55,7 @@ const WorkShops = () => {
           Recobrar la Autoestima. Potenciar tu capacidad y Creatividad
         </h2>
         <h3 className="font-bold">Objetivos Prácticos:</h3>
-        <p>
+        <p className="text-justify">
           Conseguiremos interactuar con nuestro propio Centro de Energía. Activando el Ojo
           Espiritual, quien permite el desarrollo emocional integral y pleno. Mejoraremos o
           modificaremos aspectos incómodos de nuestra propia personalidad desde el
@@ -71,12 +71,12 @@ const WorkShops = () => {
             <img src="/images/ludic.png" className="w-full object-contain" alt="Lúdico" />
           </div>
           <div className="container-text w-3/5">
-            <p>
+            <p className="text-justify">
               Disfrutar. Crear y representar comedias, Gags de improvisación. Farsa. Parodias
               con temas sociales. Décimas y Repentismo. Poemas. Musicales. Danza-Teatro.
             </p>
             <h3 className="font-bold">Objetivo:</h3>
-            <p>
+            <p className="text-justify">
               Relajar la mente. Buscamos ser felices. Ser auténticos niños/as para sacar lo
               mejor y más divertido de nosotros mismos/as. Recurriremos a imágenes emotivas,
               vivencias pasadas, situaciones reales, Escenificación de roles y desarrollaremos
@@ -91,13 +91,13 @@ const WorkShops = () => {
         <IconTitle title="Teatro Infantil." />
         <div className="container-image-text flex">
           <div className="container-text w-3/5">
-            <p>
+            <p className="text-justify">
               Estimula la creatividad, el manejo consciente de las cualidades innatas del
               infante. Juegos grupales. Crear un personaje. Improvisaciones y creación
               colectiva.
             </p>
             <h3 className="font-bold">Objetivo:</h3>
-            <p>
+            <p className="text-justify">
               Disfrutar una actividad extra escolar integrando como propósito importante, el
               desarrollo de sus capacidades artísticas y emocionales. Construir montajes
               teatrales donde ellos se identifiquen con su personalidad y su entorno.

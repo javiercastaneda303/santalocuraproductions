@@ -11,7 +11,7 @@ const Talks = () => {
         Temas de Integración Social Infancia y Juventud. Bullying. Racismo. Discriminación
         Social.
       </h2>
-      <p>
+      <p className="text-justify">
         La sociedad ha ido cambiando y las herramientas utilizadas en la enseñanza también
         pero, los resultados son leves en los asuntos comunes que respectan a la integración
         social, el racismo, el bulling y la discriminación. Estas Charlas son amenas porque
@@ -19,7 +19,7 @@ const Talks = () => {
         socioculturales de actualidad como base de la dinámica.
       </p>
       <h2 className="text-2xl font-bold">Objetivo:</h2>
-      <p>
+      <p className="text-justify">
         Que desde la infancia y los jóvenes, podamos aportar desde la experiencia migrante,
         para educar de manera integral a futuras generaciones. Contribuir a formar a una
         juventud abierta y más despierta a los problemas sociales que afectan a todos sin
