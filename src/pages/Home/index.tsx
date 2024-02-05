@@ -5,6 +5,11 @@ const Index = () => {
   return (
     <div className="home-container flex flex-col">
       <IconTitle title="Talleres de Teatro 2024" />
+      <img
+        src="/images/artistic.png"
+        className="w-full max-w-[400px] object-contain "
+        alt="Artístico"
+      />
       <p>
         Los talleres de “Actuación, Lúdico Escénicos y Formación Teatral ¡ACERCATE! son una
         propuesta de ocio y entretenimiento para niños, jóvenes y adultos desde 10 años hasta

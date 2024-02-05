@@ -14,9 +14,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="background fixed top-0 left-0 h-full z-[-10000]">
           {/* <img src="/images/fondo.jpg" alt="Fondo" className="object-contain w-full" /> */}
         </div>
-        <div className="overlay absolute top-0 left-0 w-full h-full">
-          {/* background-color: rgba(0, 0, 0, 0.2); */}
-        </div>
+        {/* <div className="overlay absolute top-0 left-0 w-full h-full"> */}
+        {/* background-color: rgba(0, 0, 0, 0.2); */}
+        {/* </div> */}
         <div className="container w-full max-w-7xl">{children}</div>
       </div>
       <Footer />
