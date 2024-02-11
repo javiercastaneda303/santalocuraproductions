@@ -120,7 +120,7 @@ const WorkShops = () => {
 
       <div className="workshops-container flex flex-col border border-cyan-500 mt-5">
         <div className="Infantil section mb-8">
-          <IconTitle title="Teatro Infantil." />
+          <IconTitle title="Cuenta Cuentos Charla Teatro Infantil." />
           <div className="flex flex-col md:flex-row">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0">
               <video

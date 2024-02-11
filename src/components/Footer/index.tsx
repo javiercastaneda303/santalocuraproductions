@@ -10,12 +10,17 @@ const Footer: React.FC = () => {
           <div className="contact-info text-center p-5">
             <p>santalocuraproductions@gmail.com</p>
             <p>+34 632 202 126</p>
+            <p>desde Tenerife a cualquier parte de España.</p>
+            <a href="https://calendly.com/santalocura/reservar-plaza">
+              <p>Reservar en la agenda</p>
+            </a>
             {/* <div>
             <h2 className="text-secondary">Horarios:</h2>
             
           </div> */}
           </div>
           {/* <div className="map w-48 h-48 bg-gray-300">Insertar mapa aquí</div> */}
+          <br />
           <iframe
             src="https://www.google.com/maps/d/u/0/embed?mid=16trxN32os9cjLq8G_1OYqugVf6N_DFw&ehbc=2E312F"
             width="640"

@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar flex justify-center bg-primary text-secondary fixed top-0 z-50 w-full">
       <div className="container flex justify-between items-center py-4 px-4 md:px-8">
-        <div className="logo text-2xl font-bold">Santa Locura</div>
+        <div className="logo text-2xl font-bold">SantaLocuraProductions</div>
         <div className="md:hidden">
           <IconButton
             color="inherit"

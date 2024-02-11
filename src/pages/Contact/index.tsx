@@ -7,11 +7,15 @@ const Contact = () => {
       <IconTitle title="Talleres Acércate a SantaLocura" />
       <div className="container-image-text flex">
         <div className="container-text w-3/5">
-          <p className="text-justify">
-            Para inscripción, les enviaremos un formulario de inscripción para seleccionar el
-            taller de tu interés. O puede solicitarlo a Santa Morel
-            santamorelvalenzu@gmail.com. +34 672 909732
-          </p>
+          <div>
+            <p className="text-justify">Para inscribirte, actualmente tenemos:</p>
+            <p className="text-justify bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md cursor-pointer hover:bg-blue-600 transition-colors">
+              Teatro Terapia en el CC Las Madres el último Jueves de cada mes.
+            </p>
+            <p className="text-justify bg-blue-500 text-white py-2 px-4 rounded-lg shadow-md cursor-pointer hover:bg-blue-600 transition-colors my-5">
+              Teatro Grupal CC Finca España cada viernes.
+            </p>
+          </div>
           <h2 className="text-2xl font-bold">
             ¡Apúntate!! ¡Te acompañaré a representar el papel de tu vida!
           </h2>

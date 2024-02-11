@@ -8,7 +8,7 @@ const Talks = () => {
     <div className="talks-container flex flex-col">
       <IconTitle title="Charlas y Conferencias" />
       <h2 className="text-2xl font-bold">
-        Temas de Integración Social Infancia y Juventud. Bullying. Racismo. Discriminación
+        Temas de Integración Social: Infancia y Juventud. Bullying. Racismo. Discriminación
         Social.
       </h2>
       <p className="text-justify">
