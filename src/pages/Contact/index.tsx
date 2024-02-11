@@ -36,9 +36,16 @@ const Contact = () => {
           />
         </div>
       </div>
-      <div className="container-map border-2 border-black w-full flex items-center justify-center h-32">
-        <p>Mapa aquí</p>
-      </div>
+      {/* <div className="container-map border-2 border-black w-full flex items-center justify-center h-32"></div> */}
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Atlantic%2FCanary&bgcolor=%23ffffff&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=c2FudGFsb2N1cmFwcm9kdWN0aW9uc0BnbWFpbC5jb20&color=%23039BE5"
+        style={{ border: 'solid 1px #777' }}
+        width="800"
+        height="600"
+        frameBorder="0"
+        scrolling="no"
+        title="Google Calendar"
+      ></iframe>
     </div>
   )
 }

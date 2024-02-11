@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   return (
     <>
       <WhatsApp />
-      <div className="footer bg-primary text-secondary">
+      <div className="footer bg-primary text-secondary mb-96">
         <div className="container flex justify-between items-center max-w-7xl mx-auto">
-          <div className="contact-info">
+          <div className="contact-info text-center p-5">
             <p>santalocuraproductions@gmail.com</p>
             <p>+34 632 202 126</p>
             {/* <div>
