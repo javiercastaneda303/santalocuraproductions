@@ -15,18 +15,23 @@ const WhatsApp: React.FC = () => {
           color: '#ffffff',
           backgroundColor: '#1a8f14',
           display: 'block',
-          padding: '25px',
+          padding: '20px',
           position: 'fixed',
           right: '5px',
-          width: '100px',
+          width: '70px',
           zIndex: 100,
-          bottom: '0em',
-          lineHeight: 1.6,
-          fontSize: '14px',
+          bottom: '5px',
           borderRadius: '50px'
         }}
       >
-        <img src="images/whatsapp-fixed.png" alt="icono whatsapp" width="50px" height="50px" />
+        <img
+          style={{
+            width: '100%',
+            objectFit: 'contain'
+          }}
+          src="images/whatsapp-fixed.png"
+          alt="icono whatsapp"
+        />
       </div>
     </a>
   )

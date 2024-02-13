@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
     <div className="navbar flex justify-center bg-primary text-secondary fixed top-0 z-50 w-full">
       <div className="container flex justify-between items-center py-4 px-4 md:px-8">
         <div className="logo text-2xl font-bold">SantaLocuraProductions</div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           </Box>
         </Drawer>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center space-x-8">
           {menuItems.map(({ name, path }) => (
             <Link
               key={name}
