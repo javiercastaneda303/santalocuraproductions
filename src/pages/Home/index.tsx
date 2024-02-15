@@ -16,15 +16,12 @@ const Index = () => {
           <p className="text-justify">
             Los talleres de “Actuación, Lúdico Escénicos y Formación Teatral ¡ACERCATE! son una
             propuesta de ocio y entretenimiento para niños, jóvenes y adultos de cualquier edad
-            y cualquier género. La práctica y el encuentro grupal contribuye a desinhibirnos y
-            permiten acercarnos a nuestra esencia creativa individual o colectiva. Promueven la
-            lectura, creatividad, el buen humor y crecimiento personal mediante las
-            herramientas tan diversas que proporciona el extenso arte teatral.
+            y cualquier género.
           </p>
           <p className="text-justify">
             La práctica y el encuentro grupal contribuye a desinhibirnos y a permiten
             acercarnos a nuestra esencia creativa individual o colectiva. Promueven la lectura,
-            creatividad, el buen humano y crecimiento personal mediante las herramientas tan
+            creatividad, el buen humor y crecimiento personal mediante las herramientas tan
             diversas que proporciona el extenso arte teatral.
           </p>
         </div>
