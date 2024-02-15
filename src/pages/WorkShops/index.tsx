@@ -109,7 +109,7 @@ const WorkShops = () => {
           <div className="flex flex-col md:flex-row">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0">
               <img
-                src="/images/2.jpg"
+                src="/images/19.jpg"
                 className="object-contain md:max-w-[400px] w-full"
                 alt="Artístico"
               />
@@ -225,7 +225,7 @@ const WorkShops = () => {
               <p className="text-justify">
                 Estas Charlas Interactivas aportan un interesante refuerzo para la integración
                 social, en adolescentes y jóvenes de las comunidades migrantes y nativas
-                referente al racismo, bulling y la discriminación en varios aspectos. Evitar o
+                referente al racismo, bullyng y la discriminación en varios aspectos. Evitar o
                 disminuir actos de racismo, exclusión, bullying y remanentes emocionales que
                 nos afectan o han afectado a cualquier persona en algún momento de la vida.
               </p>
