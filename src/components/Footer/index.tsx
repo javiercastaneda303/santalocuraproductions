@@ -7,7 +7,21 @@ const Footer: React.FC = () => {
       <WhatsApp />
       <div className="footer bg-primary text-secondary mb-96">
         <div className="container flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
-          <div className="contact-info text-center p-5  w-full  md:w-1/2">
+          <div className="contact-info text-center p-5  w-full  md:w-1/2  border border-gray-100">
+            <div className=" border border-gray-100 flex items-center">
+              <img
+                src="./images/logoAmdopresur.jpg"
+                alt="AMDOPRESUR"
+                className="max-w-[200px] max-h-[200px]"
+              />
+              <div className="ml-4">
+                <p>AMDOPRESUR</p>
+                <p className="ml-4">
+                  Asociación Multidisciplinaria de Dominicanos y Profesionales en España
+                  Participa en los programas Sociales de SantaLocura Productions
+                </p>
+              </div>
+            </div>
             <p>santalocuraproductions@gmail.com</p>
             <p>+34 632 202 126</p>
             <p>desde Tenerife a cualquier parte de España.</p>
