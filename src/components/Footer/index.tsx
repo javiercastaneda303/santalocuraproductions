@@ -14,11 +14,11 @@ const Footer: React.FC = () => {
                 alt="AMDOPRESUR"
                 className="max-w-[200px] max-h-[200px]"
               />
-              <div className="ml-4">
+              <div className="ml-4 mr-7">
                 <p>AMDOPRESUR</p>
                 <p className="ml-4">
-                  Asociación Multidisciplinaria de Dominicanos y Profesionales en España
-                  Participa en los programas Sociales de SantaLocura Productions
+                  Asociación Multidisciplinaria de Dominicanos y Profesionales en España y
+                  ultramar. Participa en los programas Sociales de SantaLocura Productions
                 </p>
               </div>
             </div>
