@@ -48,7 +48,7 @@ const WorkShops = () => {
           <div className="flex flex-col md:flex-row">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0">
               <img
-                src="/images/8.png"
+                src="/images/8-.png"
                 className="object-contain md:max-w-[400px] w-full"
                 alt="Artístico"
               />
@@ -109,7 +109,7 @@ const WorkShops = () => {
           <div className="flex flex-col md:flex-row">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0">
               <img
-                src="/images/19.jpg"
+                src="/images/19-.png"
                 className="object-contain md:max-w-[400px] w-full"
                 alt="Artístico"
               />
@@ -273,7 +273,7 @@ const WorkShops = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0 mx-auto">
               <img
-                src="/images/7.jpg"
+                src="/images/7-.png"
                 className="object-contain md:max-w-[400px] w-full"
                 alt="Artístico"
               />

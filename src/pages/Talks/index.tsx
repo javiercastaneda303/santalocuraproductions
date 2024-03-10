@@ -53,7 +53,7 @@ const Talks = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="px-8 md:w-2/5 mb-4 md:mb-0 mx-auto">
               <img
-                src="/images/4.jpg"
+                src="/images/4-.png"
                 className="object-contain md:max-w-[400px] w-full"
                 alt="Artístico"
               />

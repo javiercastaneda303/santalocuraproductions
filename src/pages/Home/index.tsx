@@ -8,7 +8,7 @@ const Index = () => {
       {/* Primer elemento: imagen y texto lado a lado */}
       <div className="md:grid md:grid-cols-2 gap-4 items-center mb-4">
         <img
-          src="/images/2.jpg"
+          src="/images/2-.png"
           className="w-full max-w-[400px] object-contain mx-auto md:mx-0 mt-4 mb-4"
           alt="Artístico"
         />
